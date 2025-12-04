@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+div.red-bg {
+    background-color: red;
+}
+
+#blue-p {
+    color: blue;
+}

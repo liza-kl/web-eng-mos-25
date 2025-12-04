@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leckeres Muffin-Rezept für einen Blog mit Nährwertangaben und Bewertung.">
+    <title>Muffin Rezept Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Muffin Rezept</h1>
+    </header>
+    <section class="content">
+        <div>
+            <h2>Leckere Blaubeer-Muffins</h2>
+            <p>Diese saftigen Blaubeer-Muffins sind perfekt für einen gemütlichen Nachmittag oder zum Frühstück.</p>
+
+            <h3>Zutaten:</h3>
+            <ul>
+                <li>200g Mehl</li>
+                <li>100g Zucker</li>
+                <li>2 TL Backpulver</li>
+                <li>1 Prise Salz</li>
+                <li>1 Ei</li>
+                <li>100ml Milch</li>
+                <li>50ml Pflanzenöl</li>
+                <li>150g frische Blaubeeren</li>
+            </ul>
+
+            <h3>Zubereitung:</h3>
+            <ol>
+                <li>Den Ofen auf 180°C vorheizen und eine Muffinform einfetten oder mit Papierförmchen auslegen.</li>
+                <li>Mehl, Zucker, Backpulver und Salz in einer Schüssel vermischen.</li>
+                <li>In einer anderen Schüssel das Ei, die Milch und das Öl verrühren.</li>
+                <li>Die flüssigen Zutaten zu den trockenen geben und alles kurz verrühren.</li>
+                <li>Blaubeeren vorsichtig unterheben.</li>
+                <li>Den Teig in die Muffinform füllen und für 20-25 Minuten backen, bis die Muffins goldbraun sind.</li>
+            </ol>
+        </div>
+
+        <div>
+            <img src="assets/muffin.jpg" alt="Leckere Blaubeer-Muffins">
+        </div>
+
+        <div>
+            <h3>Nährwertangaben (pro Muffin):</h3>
+            <table>
+                <tr>
+                    <th>Nährwert</th>
+                    <th>Menge</th>
+                </tr>
+                <tr>
+                    <td>Kalorien</td>
+                    <td>150 kcal</td>
+                </tr>
+                <tr>
+                    <td>Fett</td>
+                    <td>7 g</td>
+                </tr>
+                <tr>
+                    <td>Kohlenhydrate</td>
+                    <td>20 g</td>
+                </tr>
+                <tr>
+                    <td>Eiweiß</td>
+                    <td>3 g</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="rating-section">
+        <h3>Bewertung</h3>
+        <form action="/bewertung" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="bewertung">Bewertung (1-5):</label>
+            <input type="number" id="bewertung" name="bewertung" min="1" max="5">
+
+            <label for="kommentar">Kommentar:</label>
+            <textarea id="kommentar" name="kommentar" rows="4"></textarea>
+
+            <input type="submit" value="Bewertung abschicken">
+        </form>
+    </section>
+</body>
+
+</html>
